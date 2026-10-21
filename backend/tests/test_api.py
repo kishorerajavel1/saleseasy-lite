@@ -90,6 +90,14 @@ def test_health_does_not_call_provider_and_headers_protect_html():
         json.dumps(output.json())
 
 
+def test_browser_status_alias_matches_health():
+    with client() as session:
+        health = session.get("/health")
+        status = session.get("/status")
+        assert health.status_code == status.status_code == 200
+        assert health.json() == status.json()
+
+
 def test_irrelevant_message_is_a_benign_success_response():
     response = client().post("/analyze", json={"text": "Hi"})
     assert response.status_code == 200

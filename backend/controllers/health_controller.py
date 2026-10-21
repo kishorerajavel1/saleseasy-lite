@@ -9,6 +9,7 @@ router = APIRouter(tags=["System"])
 
 
 @router.get("/health", response_model=HealthResponse)
+@router.get("/status", response_model=HealthResponse)
 async def health(
     service: AnalysisServiceDependency, settings: SettingsDependency
 ) -> HealthResponse:

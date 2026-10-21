@@ -20,7 +20,7 @@ GROQ_API_KEY=your-key-here
 GROQ_MODEL=openai/gpt-oss-20b
 ```
 
-`LLM_PROVIDER` accepts `groq` or `gemini`. Only the selected provider's nonblank key is required; unsupported providers fail startup. Invalid credentials, unavailable models and quotas are reported when an analysis is requested; `/health` does not call the provider.
+`LLM_PROVIDER` accepts `groq` or `gemini`. Only the selected provider's nonblank key is required; unsupported providers fail startup. Invalid credentials, unavailable models and quotas are reported when an analysis is requested; `/health` and its browser-facing `/status` alias do not call the provider.
 
 ## Run
 

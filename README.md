@@ -87,6 +87,7 @@ Component guides: [Backend](backend/README.md) · [Frontend](frontend/README.md)
 | `POST /analyze` | Accept `{"text":"..."}` and return the validated seven-field analysis |
 | `GET /inventory` | Read the three fictional catalog records used by policy |
 | `GET /health` | Report liveness and selected provider configuration without calling it |
+| `GET /status` | Browser-facing alias for service availability checks |
 
 Success contains exactly `issue_category`, `urgency`, `evidence`, `recommended_next_action`, `missing_information`, `needs_human_review`, and `review_reason`.
 

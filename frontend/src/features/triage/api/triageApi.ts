@@ -7,7 +7,7 @@ import {
 } from "../../../shared/api/contracts";
 
 export async function getServiceHealth(signal: AbortSignal): Promise<Health> {
-  return parseResponse(await request("/health", { signal }), healthSchema);
+  return parseResponse(await request("/status", { signal }), healthSchema);
 }
 
 export async function analyzeUpdate(

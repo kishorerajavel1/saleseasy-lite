@@ -17,7 +17,7 @@ const analysis: Analysis = {
 
 function configure(response: Response | Promise<Response>) {
   return vi.spyOn(globalThis, "fetch").mockImplementation(async (url) => {
-    if (String(url).endsWith("/health"))
+    if (String(url).endsWith("/status"))
       return Response.json({
         status: "ok",
         max_input_chars: 2000,
