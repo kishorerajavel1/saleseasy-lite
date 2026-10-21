@@ -1,0 +1,33 @@
+@media (max-width: 760px) {
+  .app-shell {
+    padding: 0 18px 28px;
+  }
+  .app-header {
+    padding: 16px 0;
+  }
+  .page-heading {
+    margin: 22px 0;
+  }
+  .page-heading h1 {
+    font-size: 23px;
+  }
+  .analysis-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .empty-result {
+    min-height: 180px;
+  }
+  th,
+  td {
+    padding: 10px 8px;
+  }
+}
+@media (max-width: 400px) {
+  .header-caption {
+    display: none;
+  }
+  .textarea-footer {
+    font-size: 10px;
+  }
+}

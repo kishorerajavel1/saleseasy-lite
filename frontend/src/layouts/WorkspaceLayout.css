@@ -1,0 +1,71 @@
+.app-shell {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 32px 40px;
+}
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 19px;
+  font-weight: 650;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  color: white;
+  background: var(--color-accent);
+}
+.lite-tag {
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+.header-caption {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+.page-heading {
+  margin: 28px 0 24px;
+}
+.page-heading h1 {
+  font-size: 25px;
+  letter-spacing: -0.6px;
+  font-weight: 650;
+}
+.page-heading p {
+  margin-top: 7px;
+  color: var(--color-text-muted);
+}
+.analysis-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.input-column,
+.result-column {
+  min-width: 0;
+}
+.service-error {
+  padding: 12px 16px;
+  margin: 0 0 18px;
+  border: 1px solid #ebd3ca;
+  border-radius: 8px;
+  color: #8a412d;
+  background: #fff5ef;
+}
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  color: var(--color-text-muted);
+}

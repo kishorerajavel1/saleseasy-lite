@@ -1,0 +1,118 @@
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 18px 20px;
+}
+.heading-icon {
+  color: var(--color-text-muted);
+  display: grid;
+  place-items: center;
+}
+h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.textarea-wrap {
+  margin: 0 20px;
+  border: 1px solid #dce4de;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.textarea-wrap:focus-within {
+  border-color: #89b49b;
+  box-shadow: 0 0 0 3px #e9f3ed;
+}
+textarea {
+  width: 100%;
+  min-height: 190px;
+  resize: vertical;
+  display: block;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--color-text-primary);
+}
+textarea::placeholder {
+  color: var(--color-text-muted);
+}
+textarea:disabled {
+  opacity: 0.6;
+}
+.textarea-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--color-text-muted);
+  font-size: 11px;
+  padding: 9px 12px;
+  border-top: 1px solid var(--color-border);
+}
+.compose-actions {
+  padding: 16px 20px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.primary-button {
+  border: 1px solid var(--color-accent);
+  background: var(--color-accent);
+  color: white;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.primary-button:hover:not(:disabled) {
+  background: #274c34;
+}
+.primary-button:disabled {
+  opacity: 0.55;
+}
+.samples-section {
+  margin: 18px 0;
+}
+.samples-section summary {
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+.sample-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 12px;
+}
+.sample-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  padding: 7px 10px;
+  border: 1px solid var(--color-border);
+  background: white;
+  border-radius: 6px;
+  text-align: left;
+}
+.sample-button > svg {
+  color: var(--color-text-muted);
+}
+.sample-button:hover:not(:disabled),
+.sample-button.selected {
+  border-color: #9fbea9;
+  background: #f2f8f3;
+}
+.sample-button:disabled {
+  opacity: 0.5;
+}
