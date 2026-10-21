@@ -15,7 +15,6 @@ Every successful analysis uses strict structured output from the selected real p
 | Architecture and policy decisions | [Architecture decisions](docs/architecture/decisions.md) and [grounding policy](#grounding-and-review-policy) |
 | Known limitations | [Deployment and limits](#deployment-and-limits) |
 | AI-tool usage | [AI-tool disclosure](#ai-tool-disclosure) |
-| Demo preparation | [Demo script](docs/demo-script.md) |
 
 Deployment and video URLs will be added after the hosted smoke test and recording are complete.
 
