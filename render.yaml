@@ -4,6 +4,7 @@ services:
     runtime: python
     rootDir: backend
     plan: free
+    region: singapore
     buildCommand: pip install -r requirements.txt -c requirements.lock.txt
     startCommand: python -m uvicorn main:create_app --factory --host 0.0.0.0 --port $PORT --workers 1 --proxy-headers --forwarded-allow-ips="*"
     healthCheckPath: /health
